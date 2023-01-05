@@ -26,9 +26,6 @@ class Skillshare(object):
     def download_course_by_url(self, url):
         m = '1530220171'
 
-        if not m:
-            raise Exception('Failed to parse class ID from URL')
-
         self.download_course_by_class_id(m.group(1))
 
     def download_course_by_class_id(self, class_id):
