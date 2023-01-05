@@ -24,7 +24,7 @@ class Skillshare(object):
             return False
 
     def download_course_by_url(self, url):
-        m = re.match(r'(\d+)', url)
+        m = '1530220171'
 
         if not m:
             raise Exception('Failed to parse class ID from URL')
